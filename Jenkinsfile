@@ -10,8 +10,7 @@ node {
 }
 stage('testing Done'){
         input "proceed?"
-    }
-}
+ }
 node {
     stage('Validate'){
         echo "Validating"
