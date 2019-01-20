@@ -8,9 +8,13 @@ node {
         echo "testing"
     }
 }
-node {
-    stage('testing Done'){
+stage('testing Done'){
         input "proceed?"
+    }
+}
+node {
+    stage('Validate'){
+        echo "Validating"
     }
 }
 stage('Get approval'){
